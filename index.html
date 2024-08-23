@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.svg">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Rumtibet</title>
+</head>
+<body>
+    <section class="promo">
+        <div class="promo__container container">
+            <header class="header">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="navigation">
+                        <ul class="header__navigation navigation__menu">
+                            <li class="navigation__element"><a href="#" class="navigation__link">Главная</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link">Про гида</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link">Программа тура</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link">Стоимость</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link">Блог</a></li>
+                            <li class="navigation__element"><a href="#" class="navigation__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__button button button_mini">Консультация</button>
+                </div>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__title">Насладись прогулкой в горах с командой единомышленников</h1>
+                <form action="" method="get" class="promo__form form-search">
+                    <label class="form-search__element">
+                        <div class="form-search__select">
+                            <select name="location" id="location-form">
+                                <option selected disabled>Локация для тура</option>
+                                <option value="greatbritain">Великобритания</option>
+                                <option value="russia">Россия</option>
+                                <option value="usa">США</option>
+                            </select>
+                        </div>
+                        <span class="form-search__span">выберите из списка</span>
+                    </label>
+                    <label class="form-search__element">
+                        <div class="form-search__date">
+                            <input type="date" name="date-start" id="date-start">
+                        </div>
+                        <span class="form-search__span">дата начала</span>
+                    </label>
+                    <label class="form-search__element">
+                        <div class="form-search__select">
+                            <select name="location" id="location-form">
+                                <option selected disabled>Участники</option>
+                                <option value="four">4 участника</option>
+                                <option value="five">5 участников</option>
+                                <option value="six">6 участников</option>
+                            </select>
+                        </div>
+                        <span class="form-search__span">минимум 4 человека</span>
+                    </label>
+                    <button class="form-search__button button button_white">Найти программу</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
