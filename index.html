@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <title>Rumtibet</title>
 </head>
@@ -140,6 +141,75 @@
         </div>
     </section>
 
+    <section class="popular">
+        <div class="popular__container container">
+            <div class="popular__subtitle subtitle">по версии отдыхающих</div>
+            <h2 class="popular__title title">Популярные направления</h2>
+            <div class="popular__swiper swiper mySwiper">
+                <div class="popular__wrapper swiper-wrapper">
+                    <div class="popular__slide swiper-slide">
+                        <div class="popular__rating">
+                            <svg class="popular__star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="popular__number">4.9</div>
+                        </div>
+                        <div class="popular__content">
+                            <div class="popular__head">
+                                <div class="popular__name">
+                                    <div class="popular__minititle">Озеро возле гор</div>
+                                    <div class="popular__minisubtitle">романтическое приключение</div>
+                                </div>
+                                <div class="popular__price">480 $</div>
+                            </div>
+                            <p class="popular__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quas iure, fugiat, sit quam dolore, quos voluptatum assumenda libero aut adipisci. Veniam ab maxime ut pariatur labore tempore, ex eveniet.</p>
+                            <button class="popular__butt-content button">Программа тура</button>
+                        </div>
+                    </div>
+                    <div class="popular__slide swiper-slide">
+                        <div class="popular__rating">
+                            <svg class="popular__star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="popular__number">4.5</div>
+                        </div>
+                        <div class="popular__content">
+                            <div class="popular__head">
+                                <div class="popular__name">
+                                    <div class="popular__minititle">Ночь в горах</div>
+                                    <div class="popular__minisubtitle">в компании друзей</div>
+                                </div>
+                                <div class="popular__price">500 $</div>
+                            </div>
+                            <p class="popular__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consectetur beatae sed voluptatem voluptates dolorum porro, laborum veritatis deleniti? Iusto temporibus asperiores saepe vel natus maiores rerum nisi odit et.</p>
+                            <button class="popular__butt-content button">Программа тура</button>
+                        </div>
+                    </div>
+                    <div class="popular__slide swiper-slide">
+                        <div class="popular__rating">
+                            <svg class="popular__star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="popular__number">5.0</div>
+                        </div>
+                        <div class="popular__content">
+                            <div class="popular__head">
+                                <div class="popular__name">
+                                    <div class="popular__minititle">Йога в горах</div>
+                                    <div class="popular__minisubtitle">для тех, кто забоится о себе</div>
+                                </div>
+                                <div class="popular__price">230 $</div>
+                            </div>
+                            <p class="popular__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, itaque quisquam. Iusto minus molestias nam voluptatem, sequi ipsa. Eveniet ratione quisquam quod libero nesciunt consequuntur minus itaque quae inventore quasi?</p>
+                            <button class="popular__butt-content button">Программа тура</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="popular__button button">Рейтинг направлений</button>
+        </div>
+    </section>
+
     <div class="modal-video">
         <div class="modal-video__wrapper">
             <div class="modal-video__top">
@@ -151,6 +221,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
