@@ -13,11 +13,30 @@ close.addEventListener("click", ()=> {
     body.style.overflow = "visible";
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".popular__swiper", {
     slidesPerView: "auto",
     breakpoints: {
         767: {
             slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".blog__swiper", {
+    slidesPerView: "auto",
+    grid: {
+        rows: 1,
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 4,
+            
+        },
+        991: {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
         },
     },
 });
