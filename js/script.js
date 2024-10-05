@@ -16,39 +16,39 @@ close.addEventListener("click", ()=> {
     body.style.overflow = "visible";
 });
 
-
-
-
 var swiper = new Swiper(".popular__swiper", {
     slidesPerView: "auto",
+    spaceBetween: 20,
     breakpoints: {
-        767: {
+        992: {
             slidesPerView: 3,
+            spaceBetween: 0,
         },
     },
 });
 
 var swiper = new Swiper(".blog__swiper", {
     slidesPerView: "auto",
+    spaceBetween: 24,
+    autoplay: {
+        delay: 5000,
+    },
+    loop: true,
     grid: {
         rows: 1,
     },
     breakpoints: {
-        767: {
-            slidesPerView: 4,
-            
-        },
         991: {
             slidesPerView: 2,
+            spaceBetween: 0,
             grid: {
                 rows: 2,
             },
         },
+        autoplay: false,
+        loop: false,
     },
 });
-
-
-
 
 
 // Const for Accordion
@@ -85,3 +85,25 @@ galleryTabs.forEach(e => {
         galleryTabs[indexTab].classList.add("active-tabs-var");
     })
 })
+
+const burger = document.querySelector(".navigation");
+const open = document.querySelector(".header__open");
+const html = document.querySelector("html");
+const listMenu = document.querySelectorAll(".navigation__link");
+
+
+// Menu burger
+open.addEventListener("click", (e)=> {
+    burger.classList.toggle("burger-active");
+    open.classList.toggle("but-active");
+    html.classList.toggle("html-active");
+})
+
+listMenu.forEach(item => {
+    item.addEventListener("click", (e)=> {
+        burger.classList.remove("burger-active");
+        open.classList.remove("but-active");
+        html.classList.remove("html-active");
+    })
+})
+
